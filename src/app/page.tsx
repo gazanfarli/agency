@@ -1,14 +1,31 @@
+import { AboutUs } from "@/components/about-us";
+import { Approach } from "@/components/approach";
+import { BuildingSoftware } from "@/components/building-software";
+import { CaseStudies } from "@/components/case-studies";
+import { Feedbacks } from "@/components/feedbacks";
+import { Hero } from "@/components/hero";
+import { LogoList } from "@/components/logo-list";
+import { Process } from "@/components/process";
+import { Resources } from "@/components/resources";
+import { Services } from "@/components/services";
+import { TechStack } from "@/components/tech-stack";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        
+    <div className="min-h-screen">
+      <main className="flex flex-col">
+        <Hero />
+        <Services />
+        <AboutUs />
+        <LogoList />
+        <Feedbacks />
+        <CaseStudies />
+        <BuildingSoftware />
+        <Approach />
+        <TechStack />
+        <Process />
+        <Resources />
       </main>
-
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        
-      </footer>
     </div>
   );
 }
