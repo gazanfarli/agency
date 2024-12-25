@@ -7,11 +7,14 @@ import { Contact } from "./Contact";
 export const Footer = () => {
   return (
     <footer>
-      <div className="flex justify-between items-center flex-col md:flex-row md:justify-between md:items-center md:px-20 py-10">
-        <Description />
-        <Links />
-        <Contact />
+      <div className="px-4 md:px-8 lg:px-24">
+        <div className="flex flex-col md:flex-row justify-between py-10 gap-8 md:gap-12 lg:gap-20">
+          <Description />
+          <Links />
+          <Contact />
+        </div>
       </div>
+      <hr className="border-t border-gray-200" />
       <CopyRight />
     </footer>
   );
