@@ -2,19 +2,17 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { BiMenu, BiX, BiSun, BiMoon } from "react-icons/bi";
+import { BiMenu, BiX } from "react-icons/bi";
 import { navbarItems } from "@/data";
 import { Drawer } from "vaul";
 
 export const NavigationList = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
-  const [language, setLanguage] = useState("eng");
 
   const renderNavItems = () => (
-    <ul className="flex flex-col md:flex-row gap-6">
+    <ul className="flex flex-col md:flex-row md:gap-6">
       {navbarItems.map((item) => (
-        <li key={item.title} className="py-2 md:py-0">
+        <li key={item.title} className="p-4 md:p-0 border-b md:border-none">
           <Link
             href={item.href}
             className="block text-gray-700 hover:text-gray-400 transition"
@@ -26,34 +24,14 @@ export const NavigationList = () => {
     </ul>
   );
 
-  const renderUtilities = () => (
-    <div className="flex flex-col md:flex-row md:space-x-4 items-start md:items-center mt-4 md:mt-0">
-      <select
-        value={language}
-        onChange={(e) => setLanguage(e.target.value)}
-        className="border border-gray-300 rounded-md p-2 text-sm md:w-auto"
-      >
-        <option value="az">AZ</option>
-        <option value="eng">ENG</option>
-        <option value="ru">RU</option>
-      </select>
-
-      <button
-        onClick={() => setDarkMode((prev) => !prev)}
-        className="p-2 rounded-md border border-gray-300 hover:bg-gray-100 transition"
-        aria-label="Toggle Color Mode"
-      >
-        {darkMode ? <BiSun size={20} /> : <BiMoon size={20} />}
-      </button>
-    </div>
-  );
-
   return (
     <div className="flex flex-col md:flex-row md:items-center space-x-4">
-      <div className="hidden md:flex">{renderNavItems()}</div>
+      <div className="hidden md:flex">
+        {renderNavItems()}
+      </div>
 
       <Drawer.Root
-        direction="left"
+        direction="right"
         dismissible={true}
         open={isDrawerOpen}
         onOpenChange={setIsDrawerOpen}
@@ -80,8 +58,9 @@ export const NavigationList = () => {
                 <BiX size={30} />
               </button>
             </div>
-            <div className="p-4">{renderNavItems()}</div>
-            <div className="p-4">{renderUtilities()}</div>
+            <div>
+              {renderNavItems()}
+            </div>
           </Drawer.Content>
         </Drawer.Portal>
       </Drawer.Root>

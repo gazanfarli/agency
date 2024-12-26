@@ -5,6 +5,13 @@ import {
   TiSocialLinkedin,
   TiSocialTwitter,
 } from "react-icons/ti";
+import { Logo1 } from "@/assets/logos/Logo1";
+import { Logo2 } from "@/assets/logos/Logo2";
+import { Logo3 } from "@/assets/logos/Logo3";
+import { Logo4 } from "@/assets/logos/Logo4";
+import { Logo5 } from "@/assets/logos/Logo5";
+import { Logo6 } from "@/assets/logos/Logo6";
+import { Logo7 } from "@/assets/logos/Logo7";
 
 export const navbarItems = [
   {
@@ -96,3 +103,13 @@ export const footerData = {
     },
   ],
 };
+
+export const logoList = [
+  { id: 1, name: "Logo 1", image: Logo1 },
+  { id: 2, name: "Logo 2", image: Logo2 },
+  { id: 3, name: "Logo 3", image: Logo3 },
+  { id: 4, name: "Logo 4", image: Logo4 },
+  { id: 5, name: "Logo 5", image: Logo5 },
+  { id: 6, name: "Logo 6", image: Logo6 },
+  { id: 7, name: "Logo 7", image: Logo7 },
+];
