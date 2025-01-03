@@ -4,7 +4,6 @@ import { CaseStudy } from './CaseStudy'
 export const CaseStudies = () => {
   return (
     <section id='case-studies'>
-
       <CaseStudy />
       <CaseStudy />
       <CaseStudy />

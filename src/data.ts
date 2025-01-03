@@ -12,6 +12,20 @@ import { Logo4 } from "@/assets/logos/Logo4";
 import { Logo5 } from "@/assets/logos/Logo5";
 import { Logo6 } from "@/assets/logos/Logo6";
 import { Logo7 } from "@/assets/logos/Logo7";
+import RocketIcon from "@/components/approach/images/Rocket_perspective_matte.png";
+import CodeIcon from "@/components/approach/images/Code_perspective_matte.png";
+import HeartIcon from "@/components/approach/images/Heart_rate_perspective_matte.png";
+import ShieldIcon from "@/components/approach/images/Shield_perspective_matte.png";
+import SuccessIcon from "@/components/approach/images/Success_perspective_matte.png";
+import PadlockIcon from "@/components/approach/images/Padlock_perspective_matte.png";
+import { StaticImageData } from "next/image";
+
+export type TApproachItem = {
+  icon: StaticImageData;
+  title: string;
+  description: string;
+  gradient: string;
+};
 
 export const navbarItems = [
   {
@@ -112,4 +126,49 @@ export const logoList = [
   { id: 5, name: "Logo 5", image: Logo5 },
   { id: 6, name: "Logo 6", image: Logo6 },
   { id: 7, name: "Logo 7", image: Logo7 },
+];
+
+export const approachItems: TApproachItem[] = [
+  {
+    icon: RocketIcon,
+    title: "UX Driven Engineering",
+    description:
+      "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.",
+    gradient: "bg-gradient-to-r from-[#29272E] to-[#27272E]",
+  },
+  {
+    icon: CodeIcon,
+    title: "Developing Shared Understanding",
+    description:
+      "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.",
+    gradient: "bg-gradient-to-r from-[#68DBF2] to-[#509CF5]",
+  },
+  {
+    icon: HeartIcon,
+    title: "Proven Experience and Expertise",
+    description:
+      "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.",
+    gradient: "bg-gradient-to-r from-[#FF92AE] to-[#FF3D9A]",
+  },
+  {
+    icon: ShieldIcon,
+    title: "Security & Intellectual Property (IP)",
+    description:
+      "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.",
+    gradient: "bg-gradient-to-r from-[#67E9F1] to-[#24E795]",
+  },
+  {
+    icon: SuccessIcon,
+    title: "Code Reviews",
+    description:
+      "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.",
+    gradient: "bg-gradient-to-r from-[#FFEF5E] to-[#F7936F]",
+  },
+  {
+    icon: PadlockIcon,
+    title: "Quality Assurance & Testing",
+    description:
+      "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.",
+    gradient: "bg-gradient-to-r from-[#F76680] to-[#57007B]",
+  },
 ];
