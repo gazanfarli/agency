@@ -26,7 +26,7 @@ const ApproachItem = ({ item }: ApproachItemProps) => {
 
 export const Approach = () => {
   return (
-    <div className="bg-[#F7F7FA] px-4 md:px-8 lg:px-24">
+    <section id="approach" className="bg-[#F7F7FA] px-4 md:px-8 lg:px-24">
       <div className="my-6 md:my-8 lg:my-16">
         <div className="w-full flex justify-center items-center mb-5">
           <div className="w-[69px] h-[5px] bg-gradient-to-r from-[#F76680] to-[#57007B]" />
@@ -41,6 +41,6 @@ export const Approach = () => {
           <ApproachItem key={item.title} item={item} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
