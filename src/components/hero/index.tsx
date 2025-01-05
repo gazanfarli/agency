@@ -9,7 +9,7 @@ export const Hero = () => {
       className="bg-white px-4 md:px-8 lg:px-24 py-8 md:py-10 lg:py-12"
     >
       <div className="max-w-[1233px] mx-auto flex flex-col-reverse md:flex-row items-center gap-4">
-        <div className="flex flex-1 items-center justify-center text-center md:text-left">
+        <div className="flex flex-1 items-center justify-start text-center md:text-left">
           <div className="max-w-lg">
             <h2 className="text-[36px] md:text-[45px] lg:text-[55px] font-medium text-[#1A202C] leading-snug mb-6">
               <span>
@@ -20,7 +20,7 @@ export const Hero = () => {
                 &nbsp;is&nbsp;
               </span>
               <strong className="font-bold">
-                built by great{" "}
+                built by great&nbsp;
                 <span className="bg-gradient-to-tr from-[#406AFF] to-[#F7666F] bg-clip-text text-transparent">
                   teams
                 </span>
