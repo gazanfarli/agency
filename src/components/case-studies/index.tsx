@@ -13,6 +13,7 @@ export const CaseStudies = () => {
           Our recent <span className="font-bold">Case studies</span>
         </h2>
       </div>
+
       <div className="max-w-[1233px] mx-auto grid gap-8 mb-6 md:mb-12 lg:mb-24">
         {caseStudyItems.map((item) => (
           <CaseStudy key={item.id} item={item} />
