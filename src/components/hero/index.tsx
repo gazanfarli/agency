@@ -11,7 +11,7 @@ export const Hero = () => {
       <div className="max-w-[1233px] mx-auto flex flex-col-reverse md:flex-row items-center gap-4">
         <div className="flex flex-1 items-center justify-start text-center md:text-left">
           <div className="max-w-lg">
-            <h2 className="text-[36px] md:text-[45px] lg:text-[55px] font-medium text-[#1A202C] leading-snug mb-6">
+            <h2 className="text-[28px] sm:text-[36px] md:text-[45px] lg:text-[55px] font-medium text-[#1A202C] leading-[1.2] sm:leading-[1.3] md:leading-[1.4] lg:leading-[1.2] mb-6">
               <span>
                 Great&nbsp;
                 <span className="font-bold bg-gradient-to-t from-[#0D1C9F] to-[#DE4396] bg-clip-text text-transparent">

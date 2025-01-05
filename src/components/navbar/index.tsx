@@ -5,11 +5,14 @@ import { NavigationList } from "./NavigationList";
 
 export const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center bg-white text-[#4A5568] px-[25px] py-[10px]">
+    <nav className="px-4 md:px-8 lg:px-24 bg-white text-[#4A5568]">
+      <div className="max-w-[1233px] mx-auto  flex justify-between items-center py-[10px]">
+
       <Navlogo />
       <NavigationList />
       <div className="hidden md:flex items-center">
         <ContactButton />
+      </div>
       </div>
     </nav>
   );
