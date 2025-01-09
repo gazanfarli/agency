@@ -24,6 +24,7 @@ export const ServiceItem = ({
         transform: `translateX(${relativePosition * 10}px) ${
           relativePosition === 0 ? "translateY(20px)" : ""
         }`,
+        transition: 'all 700ms ease'
       }}
     >
       <div

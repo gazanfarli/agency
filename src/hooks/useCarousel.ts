@@ -15,7 +15,7 @@ export const useCarousel = (totalItems: number) => {
   const handleDragEnd = (e: React.TouchEvent | React.MouseEvent) => {
     const clientX =
       "changedTouches" in e ? e.changedTouches[0].clientX : e.clientX;
-    const dragStartX = parseFloat(sessionStorage.getItem("dragStartX") || "0");
+    const dragStartX = parseFloat(sessionStorage.getItem("dragStartX") ?? "0");
     const dragDistance = dragStartX - clientX;
 
     if (dragDistance > 50) {
