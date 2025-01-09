@@ -14,7 +14,7 @@ export const TechStack = () => {
         </h2>
       </div>
 
-      <div className="max-w-[1233px] mx-auto flex flex-wrap justify-center gap-4 md:gap-8 lg:gap-12">
+      <div className="max-w-[1233px] flex flex-wrap justify-center mx-auto mb-6 md:mb-12 lg:mb-24 gap-4 md:gap-8 lg:gap-12">
         {techStackItems.map((item) => (
           <TechStackItem key={item.id} item={item} />
         ))}

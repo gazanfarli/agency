@@ -6,7 +6,6 @@ import { Feedbacks } from "@/components/feedbacks";
 import { Hero } from "@/components/hero";
 import { LogoList } from "@/components/logo-list";
 import { Process } from "@/components/process";
-import { Resources } from "@/components/resources";
 import { Services } from "@/components/services";
 import { TechStack } from "@/components/tech-stack";
 
@@ -23,8 +22,8 @@ export default function Home() {
         <BuildingSoftware />
         <Approach />
         <TechStack />
+        <hr className="w-full h-[1px] bg-[#E7DAED]" />
         <Process />
-        <Resources />
       </main>
     </div>
   );
